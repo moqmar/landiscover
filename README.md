@@ -1,9 +1,11 @@
 
 # landiscover
 
-## Deprecation notice
+## About this fork
 
-This tool is not maintained anymore. It might work, it might not.
+This fork was created by me (@moqmar) after <https://github.com/aler9/landiscover> was deprecated on March 3rd 2025. This is for now mostly a maintenance-only fork, primarily because I just want to keep using the tool myself.
+
+I will look into Pull Requests also for smaller features and might merge them, but my time is quite limited so don't worry if it takes a couple of weeks to respond.
 
 ## Info
 
