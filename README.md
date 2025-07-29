@@ -9,9 +9,9 @@ I will look into Pull Requests also for smaller features and might merge them, b
 
 ## Info
 
-[![Test](https://github.com/aler9/landiscover/workflows/test/badge.svg)](https://github.com/aler9/landiscover/actions?query=workflow:test)
-[![Lint](https://github.com/aler9/landiscover/workflows/lint/badge.svg)](https://github.com/aler9/landiscover/actions?query=workflow:lint)
-[![Docker Hub](https://img.shields.io/badge/docker-aler9%2Flandiscover-blue)](https://hub.docker.com/r/aler9/landiscover)
+[![Test](https://github.com/moqmar/landiscover/workflows/test/badge.svg)](https://github.com/moqmar/landiscover/actions?query=workflow:test)
+[![Lint](https://github.com/moqmar/landiscover/workflows/lint/badge.svg)](https://github.com/moqmar/landiscover/actions?query=workflow:lint)
+[![Docker Hub](https://img.shields.io/badge/docker-moqmar%2Flandiscover-blue)](https://hub.docker.com/r/moqmar/landiscover)
 
 ![](README.gif)
 
@@ -31,10 +31,10 @@ This software combines multiple discovery techniques:
 
 Install and run with Docker:
 ```
-docker run --rm -it --network=host -e COLUMNS=$COLUMNS aler9/landiscover
+docker run --rm -it --network=host -e COLUMNS=$COLUMNS moqmar/landiscover
 ```
 
-Alternatively, you can download and run a precompiled binary from the [release page](https://github.com/aler9/landiscover/releases).
+Alternatively, you can download and run a precompiled binary from the [release page](https://github.com/moqmar/landiscover/releases).
 
 ## Full command-line usage
 

@@ -1,4 +1,4 @@
-module github.com/aler9/landiscover
+module github.com/moqmar/landiscover
 
 go 1.21.0
 
