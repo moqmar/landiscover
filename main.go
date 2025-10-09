@@ -2,7 +2,7 @@
 package main
 
 import (
-	//"bytes"
+	"bytes"
 	"fmt"
 	"net"
 	"os"
@@ -132,11 +132,9 @@ func newProgram() error {
 		for _, a := range addrs {
 			if ipn, ok := a.(*net.IPNet); ok {
 				if ip4 := ipn.IP.To4(); ip4 != nil {
-					// TODO: add "-min-prefix-length" option with a default of 24
-					//if !bytes.Equal(ipn.Mask, []byte{255, 255, 255, 0}) {
-					//	return ip4, nil
-					//}
-					return ip4, nil
+					if !bytes.Equal(ipn.Mask, []byte{255, 255, 255, 255}) {
+						return ip4, nil
+					}
 				}
 			}
 		}
