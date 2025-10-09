@@ -3,7 +3,7 @@ module github.com/moqmar/landiscover
 go 1.21.0
 
 require (
-	github.com/alecthomas/kong v1.8.1
+	github.com/alecthomas/kong v1.12.1
 	github.com/google/gopacket v1.1.19
 	github.com/nsf/termbox-go v1.1.1
 )
