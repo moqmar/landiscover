@@ -81,7 +81,7 @@ type program struct {
 
 var cli struct {
 	Passive   bool   `help:"do not send any packet."`
-	Interface string `arg:"" help:"Interface to listen to."`
+	Interface string `arg:"" optional:"" help:"Interface to listen to."`
 }
 
 func newProgram() error {
