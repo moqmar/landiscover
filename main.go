@@ -89,10 +89,6 @@ func newProgram() error {
 		kong.Description("landiscover "+version),
 		kong.UsageOnError())
 
-	if os.Getuid() != 0 {
-		return fmt.Errorf("you must be root")
-	}
-
 	layerNbnsInit()
 	layerMdnsInit()
 
@@ -159,6 +155,7 @@ func newProgram() error {
 
 	err = newListener(p)
 	if err != nil {
+		fmt.Printf("Couldn't start listener, please check permissions. You must either run this program as 'root', or - more recommended - add the 'CAP_NET_RAW' capability to the executable: sudo setcap cap_net_raw+ep %s\n", os.Args[0])
 		return err
 	}
 
